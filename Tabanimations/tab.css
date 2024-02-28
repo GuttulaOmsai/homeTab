@@ -1,0 +1,183 @@
+
+/* tab css using animations*/
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+  }
+
+  .tabs {
+    max-width: 1520px;
+    margin: 1px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(139, 18, 18, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    height: 1770px;
+  }
+
+  .tab-header {
+    display: flex;
+    background-color: #1b0b69;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .tab-header div {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    transition: background-color 0.3s;
+  }
+
+  .tab-header div.active {
+    background-color: #7ae312;
+  }
+
+  .tab-indicator {
+    height: 3px;
+    background-color: #052b44;
+    transition: transform 0.3s;
+  }
+
+  .tab-body div {
+    padding: 20px;
+    display: none;
+  }
+
+  .tab-body div.active {
+    display: block;
+  }
+  .sp{
+    text-align: center;
+    color: #0c2353;
+  }
+  .sp1{
+    display: flex;
+  }
+  section{
+    display: flex;
+  }
+  .head1{
+    flex-direction: column;
+  }
+  .head2{
+    flex-direction: column;
+  }
+  footer{
+    flex-direction: column;
+    height: 500px;
+    background-color: #1b0b69;
+    margin-left: -20px;
+    width: 1530px;
+  }
+  .head {
+    text-align: center;
+}
+
+.head2 h1 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #f4f4f4;
+}
+.head1 h1 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #f4f4f4;
+}
+
+.social-icon {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding-top: 30px;
+}
+.footer-section{
+    margin-left: 100px;
+    padding-top: 40px;
+}
+.head2{
+    margin-left: 240px;
+}
+h4{
+    color: #f4f4f4;
+}
+.ftp{
+    background-color: rgb(18, 15, 15);
+    margin-top: -30px;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+}
+.head-section{
+    display: flex;
+}
+.ic2{
+    margin-left: 10px;
+}
+.ic1{
+    margin-left: 10px;
+}
+/* media quries added in tab view*/
+@media only screen and (max-width: 900px) {
+    footer{
+        width: 1530px;
+        height: 500px;
+    }
+    body{
+        overflow-x: hidden;
+    }
+  
+    .head2{
+        margin-left: 40px;
+    }
+    .head1{
+        margin-left: -50px;
+    }
+    .tabs{
+        height: 1400px;
+    }
+    .ftp{
+        margin-top: -60px;
+    }
+    .head2 h4{
+        width: 350px;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    footer{
+        width: 1530px;
+        height: 2000px;
+    }
+    .footer-section{
+        flex-direction: column;
+    }
+  
+    .head2{
+        margin-left: 50px;
+        flex-direction: column;
+    }
+    .head1{
+        margin-left: 50px;
+    }
+    .tabs{
+        height: 2380px;
+    }
+    .head2 h4{
+        width: 300px;
+        margin-left: -100px;
+    }
+    .head-section{
+        margin-left: -100px;
+    }
+    .ftp{
+        margin-top: -430px;
+    }
+    body{
+        overflow-x: hidden;
+    }
+  }
